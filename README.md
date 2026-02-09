@@ -18,13 +18,20 @@ This project has two main parts:
 - show single activity simple page
   ![Orders page](docs/show_activites.jpg)
 
+-------
 
-### use dockerized project
--  Note: The Dockerized version of this project has not been fully tested yet. However, essential steps such as SQLite database creation and installation of required npm packages are already included.
+### Use Dockerized Project
 
-## 🚀 Getting Started
+**Note:** The Dockerized version of this project has not been fully tested yet. However, essential steps such as SQLite database creation and installation of required npm packages are already included.
 
-### 1. Install Laravel and Requirements
+#### Running the project with Docker
+
+1. **Build and start containers**
+```bash
+docker-compose up --build -d
+```
+
+### Install Laravel and Requirements
 ```bash
 composer install
 ```
@@ -41,7 +48,7 @@ npm install
 npm run dev
 nprm run build // production mode
 ```
-### 3. SQLite (Optional)
+### SQLite (Optional)
 
 - The project works with both JSON and SQLite databases.
 - For SQLite, running Laravel migrations is mandatory:
