@@ -1,0 +1,105 @@
+/* tables */
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 1rem;
+    font-size: 0.92rem;       /* کمی کوچکتر */
+    line-height: 1.4;         /* فاصله خطوط کمتر */
+    direction: rtl;           /* راست‌چین برای فارسی */
+}
+
+.table th,
+.table td {
+    padding: 0.4rem 0.6rem;
+    text-align: center !important;
+    border: 1px solid #dee2e6;
+}
+
+.table th {
+    background-color: #f8f9fa; /* رنگ header مشابه bootstrap */
+    font-weight: 600;
+}
+
+.table-striped tbody tr:nth-child(odd) {
+    background-color: #f2f2f2;
+}
+
+/* hover */
+.table-hover tbody tr:hover {
+    background-color: #e9ecef;
+    cursor: pointer;
+}
+
+.table-bordered {
+    border: 1px solid #dee2e6;
+    border-radius: 5px;
+    overflow: hidden; /* برای گرد شدن لبه‌ها */
+}
+
+.table-bordered th,
+.table-bordered td {
+    border: 1px solid #dee2e6;
+}
+
+.table-responsive {
+    overflow-x: auto;
+    display: block;
+    width: 100%;
+}
+
+/* --- Title / Heading Classes --- */
+
+/* General title padding and margin */
+.title {
+    padding: 0.25rem 0; /* top & bottom padding */
+    margin: 0.5rem 0;   /* spacing from surrounding elements */
+    line-height: 1.2;
+    font-weight: 600;
+}
+
+/* Title sizes */
+.title-1 {
+    font-size: 2rem;    /* H1 size */
+}
+
+.title-2 {
+    font-size: 1.75rem; /* H2 size */
+}
+
+.title-3 {
+    font-size: 1.5rem;  /* H3 size */
+}
+
+.title-4 {
+    font-size: 1.25rem; /* H4 size */
+}
+
+.title-5 {
+    font-size: 1rem;    /* H5 size */
+}
+
+.title-6 {
+    font-size: 0.875rem; /* H6 size */
+}
+
+/* Optional color variants */
+.title-primary {
+    color: #0d6efd; /* like bootstrap primary */
+}
+
+.title-secondary {
+    color: #6c757d; /* like bootstrap secondary */
+}
+
+.title-success {
+    color: #198754;
+}
+
+.title-danger {
+    color: #dc3545;
+}
+
+/* Right-to-left support (for Persian) */
+.title {
+    text-align: right;
+}
