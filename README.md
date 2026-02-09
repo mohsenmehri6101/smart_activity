@@ -3,14 +3,22 @@
 This project has two main parts:
 
 ## Table of Contents
-1. [Use Dockerized Project](#use-dockerized-project)
-2. [Install Laravel and Requirements](#1-install-laravel-and-requirements)
-3. [Install Vue.js and Requirements](#2-install-vuejs-and-requirements)
-4. [SQLite (Optional)](#3-sqlite-optional)
-5. [Documentation](#-documentation)
-6. [Simple Show](#simple-show)
+1. [Simple Show](#simple-show)
+2. [Use Dockerized Project](#use-dockerized-project)
+3. [Install Laravel and Requirements](#1-install-laravel-and-requirements)
+4. [Install Vue.js and Requirements](#2-install-vuejs-and-requirements)
+5. [SQLite (Optional)](#3-sqlite-optional)
+6. [Documentation](#-documentation)
 
 ---
+
+### Simple Show
+- show list activities
+  ![Dashboard view](docs/list_activites.jpg)
+- show single activity simple page
+  ![Orders page](docs/show_activites.jpg)
+
+
 ### use dockerized project
 -  Note: The Dockerized version of this project has not been fully tested yet. However, essential steps such as SQLite database creation and installation of required npm packages are already included.
 
@@ -53,9 +61,3 @@ Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManage
 ```
 
 [Laravel Documentation installation](https://laravel.com/docs/12.x/installation)
-
-### Simple Show
-- show list activities
-![Dashboard view](docs/list_activites.jpg)
-- show single activity simple page
-![Orders page](docs/show_activites.jpg)
