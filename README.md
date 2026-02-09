@@ -1,7 +1,3 @@
-# Smart Activity Project
-
-This project has two main parts:
-
 ## Table of Contents
 1. [Simple Show](#simple-show)
 2. [Use Dockerized Project](#use-dockerized-project)
