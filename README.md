@@ -35,7 +35,7 @@ composer install
 - If you want to use SQLite, you need to create the database file and run migrations:
 ```bash
 php artisan migrate
-  ```z
+  ```
 
 ### 2. Install Vue.js and Requirements
 
