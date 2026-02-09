@@ -1,6 +1,9 @@
 <template>
     <div>
-        <h1 class="title-3">لیست فعالیت‌ها</h1>
+        <div class="header-row">
+            <button class="create-button" @click="goToStore">ایجاد فعالیت</button>
+            <h1 class="title-3 clickable" @click="goToStore">لیست فعالیت‌ها</h1>
+        </div>
         <br>
         <hr>
         <br>
@@ -93,6 +96,8 @@
 import { ref, reactive, onMounted } from 'vue'
 import { RouterLink } from 'vue-router'
 import axios from 'axios'
+import { useRouter } from 'vue-router'
+const router = useRouter()
 
 const baseURL = import.meta.env.APP_URL || 'http://localhost:8000'
 
@@ -157,6 +162,10 @@ const parseMetadata = (metadata: string) => {
 const changePage = (page: number) => {
     if (page < 1 || page > pagination.last_page) return
     fetchActivities(page)
+}
+
+const goToStore = () => {
+    router.push('/activities/store')
 }
 
 // Initial fetch
@@ -225,4 +234,23 @@ onMounted(() => fetchActivities())
 .bold-text{
     font-weight: bold!important;
 }
+.header-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.create-button {
+    padding: 6px 12px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.create-button:hover {
+    background-color: #2c80b4;
+}
+
 </style>

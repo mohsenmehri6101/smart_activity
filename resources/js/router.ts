@@ -1,9 +1,11 @@
 import { createRouter, createWebHistory } from 'vue-router';
 import Index from './pages/Activities/Index.vue';
 import Show from './pages/Activities/Show.vue';
+import Store from './pages/Activities/Store.vue';
 
 const routes = [
     { path: '/activities', component: Index },
+    { path: '/activities/store', component: Store},
     { path: '/activities/:id', component: Show, props: true },
 ];
 
