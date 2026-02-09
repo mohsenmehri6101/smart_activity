@@ -1,25 +1,61 @@
-# Laravel + Vue Starter Kit
+# Smart Activity Project
 
-## Introduction
+This project has two main parts:
 
-Our Vue starter kit provides a robust, modern starting point for building Laravel applications with a Vue frontend using [Inertia](https://inertiajs.com).
+## Table of Contents
+1. [Use Dockerized Project](#use-dockerized-project)
+2. [Install Laravel and Requirements](#1-install-laravel-and-requirements)
+3. [Install Vue.js and Requirements](#2-install-vuejs-and-requirements)
+4. [SQLite (Optional)](#3-sqlite-optional)
+5. [Documentation](#-documentation)
+6. [Simple Show](#simple-show)
 
-Inertia allows you to build modern, single-page Vue applications using classic server-side routing and controllers. This lets you enjoy the frontend power of Vue combined with the incredible backend productivity of Laravel and lightning-fast Vite compilation.
+---
+### use dockerized project
+-  Note: The Dockerized version of this project has not been fully tested yet. However, essential steps such as SQLite database creation and installation of required npm packages are already included.
 
-This Vue starter kit utilizes Vue 3 and the Composition API, TypeScript, Tailwind, and the [shadcn-vue](https://www.shadcn-vue.com) component library.
+## 🚀 Getting Started
 
-## Official Documentation
+### 1. Install Laravel and Requirements
+```bash
+composer install
+```
+- Make sure PHP and Composer are installed.
+- If you want to use SQLite, you need to create the database file and run migrations:
+```bash
+php artisan migrate
+  ```z
 
-Documentation for all Laravel starter kits can be found on the [Laravel website](https://laravel.com/docs/starter-kits).
+### 2. Install Vue.js and Requirements
 
-## Contributing
+```bash
+npm install
+npm run dev
+nprm run build // production mode
+```
+### 3. SQLite (Optional)
 
-Thank you for considering contributing to our starter kit! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+- The project works with both JSON and SQLite databases.
+- For SQLite, running Laravel migrations is mandatory:
+```bash
+php artisan migrate
+  ```
 
-## Code of Conduct
+### 📚 Documentation
+- from install and prepare  on windows project laravel (powershell)
+```PowerShell
+# Run as administrator...
+Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://php.new/install/windows/8.4'))
+```
+- adn linux
+```PowerShell
+/bin/bash -c "$(curl -fsSL https://php.new/install/linux/8.4)"
+```
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+[Laravel Documentation installation](https://laravel.com/docs/12.x/installation)
 
-## License
-
-The Laravel + Vue starter kit is open-sourced software licensed under the MIT license.
+### Simple Show
+- show list activities
+![Dashboard view](docs/list_activites.jpg)
+- show single activity simple page
+![Orders page](docs/show_activites.jpg)

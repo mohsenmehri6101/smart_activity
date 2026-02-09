@@ -14,7 +14,7 @@ class ActivityService
     {
         if($paginate){
             $page = request('page',1);
-            $perPage = request('per_page',request('perPage',15));
+            $perPage = request('per_page',request('perPage',5));
             return $this->repository->paginate(page: $paginate, perPage: $perPage, filters: $filters);
         }
         return $this->repository->all($filters);
